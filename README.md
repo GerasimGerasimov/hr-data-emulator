@@ -1,5 +1,6 @@
-## hr-data-emulator
-1. Создаёт фэйковые данные на 500 Кандидатов, по шаблону 
+# hr-data-emulator
+1. Создаёт фэйковые данные на 500 Кандидатов, по шаблону
+```
 export default class Candidate {
     constructor () {
         this.ID = 0 //кол-во кандидатов найденных БОТом (заполняется БОТом)
@@ -18,9 +19,10 @@ export default class Candidate {
         this.uri = ''   //ссылка на Кандидата для API
     }  
 }
-
+```
 2. Создаёт список кандидатов и кол-во кандидатов для вставки в свойства Группы
 в формате:
+```
 {
   "CandidatesCount": 2,
   "Candidates": {
@@ -28,11 +30,11 @@ export default class Candidate {
     "1": "data/candidates/1",
   }
 }
-
-#Запуск
+```
+## Запуск
 node index.js
 
-#Результат
+## Результат
 В образовавшейся директории "data" создаётся два файла:
 1. candidates.json - кандидаты
 2. CandidatesList.json - список кандидатов для вставки в группу
