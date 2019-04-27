@@ -20,6 +20,16 @@ export default class Candidate {
     }  
 }
 ```
+В итоговом JSON имеем объект формата:
+```
+{
+  "data": {
+    "data/candidates/0": {
+      "ID": 0,
+      "Group": 0,
+      "FullName": "Mrs. Franco Crist",
+```
+
 2. Создаёт список кандидатов и кол-во кандидатов для вставки в свойства Группы
 в формате:
 ```
