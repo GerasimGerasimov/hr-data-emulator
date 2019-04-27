@@ -28,10 +28,12 @@ class Candidate {
     }  
 }
 
+//объект для JSON всех кандидатов
 var candidates = {
     data:{}
 }
 
+//объект для вставки списка кандидатов в свойства группы
 var uriList = {
     CandidatesCount:0,
     Candidates:{}
