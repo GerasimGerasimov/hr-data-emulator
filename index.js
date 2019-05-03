@@ -18,12 +18,12 @@ class Candidate {
         this.ProfileURI = "https://www.linkedin.com/in/gerasim-gerasimov-b55936a5/",//Ссылка на LinkedIn
         this.Company = faker.company.companyName(),//Текущее место работы кандидата
         this.Position = faker.name.jobTitle(),//Должность кандидата
-        this.Status = faker.random.arrayElement(['Added','InvitationAccepted ','PrivateMessageRespond']),//Статус. Возможные статусы:
+        this.Status = faker.random.arrayElement(['Added','InvitationAccepted','PrivateMessageRespond']),//Статус. Возможные статусы:
                             // 0) Added Кандидат добавлен ещё НЕ принял приглашение
                             // 1) InvitationAccepted Кандидат принял предложение
                             // 2) PrivateMessageRespond Кандидат ответил на личное сообщение
         this.StatusDate = today(), //дата изменения статуса
-        this.Note = faker.hacker.phrase(), //Примечание HR`a о Кандидате
+        this.Note = faker.random.arrayElement(['','Адекватный','Не ищет работу','В поиске работы']), //Примечание HR`a о Кандидате
         this.Checked = faker.random.boolean()//
     }  
 }
